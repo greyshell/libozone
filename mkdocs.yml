@@ -1,0 +1,8 @@
+site_name: libozone
+nav:
+  - General:
+    - Quick Start: index.md
+  - How To Use:
+      - Heap: heap.md
+theme:
+  name: readthedocs
