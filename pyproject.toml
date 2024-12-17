@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "libozone"
-version = "0.1.1"
+version = "0.1.2"
 description = "A collection of data structures written in Python"
 homepage = "https://libozone.readthedocs.io"
 authors = ["Abhijit Sinha <grey.shell@gmail.com>"]
