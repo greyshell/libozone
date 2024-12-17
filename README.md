@@ -6,6 +6,10 @@
 
 <https://libozone.readthedocs.io>
 
+## Pypi Reference
+
+<https://pypi.org/project/libozone/>
+
 ## How to install
 
 ```bash
