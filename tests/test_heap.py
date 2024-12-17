@@ -9,6 +9,25 @@ import operator
 from libozone.heap import Heap, HeapType
 
 
+class Student:
+    """helper class"""
+    def __init__(self, name, score):
+        self.name = name
+        self.key = score
+
+    def __lt__(self, other):
+        return self.key < other.key
+
+    def __gt__(self, other):
+        return self.key > other.key
+
+    def __eq__(self, other):
+        return self.key == other.key
+
+    def __ne__(self, other):
+        return self.key != other.key
+
+
 def is_heap_property_satisfied(array, heap_type=HeapType.MIN):
     """helper function to test the heap property"""
     for current_idx in range(1, len(array)):
@@ -95,6 +114,36 @@ class TestProgram(unittest.TestCase):
 
         # Assert that the exception message matches
         self.assertEqual(str(context.exception), "empty heap")
+
+    def test_max_heap_operations_03(self):
+        """
+        test a min heap operation
+        """
+        alice = Student("alice", 80)
+        bob = Student("bob", 90)
+        malory = Student("malory", 95)
+        tom = Student("malory", 55)
+
+        arr = [alice, bob, malory, tom]
+        heap = Heap(arr, HeapType.MAX)
+
+        # test the heap property
+        self.assertEqual(True, is_heap_property_satisfied(arr, heap_type=HeapType.MAX))
+
+        # test peek()
+        self.assertEqual(95, heap.peek().key)
+
+        # test insert()
+        chris = Student("chris", 98)
+        heap.insert(chris)
+        self.assertEqual(True, is_heap_property_satisfied(arr, heap_type=HeapType.MAX))
+
+        # test peek()
+        self.assertEqual(98, heap.peek().key)
+
+        # test remove()
+        self.assertEqual(98, heap.remove().key)
+        self.assertEqual(True, is_heap_property_satisfied(arr, heap_type=HeapType.MAX))
 
 
 if __name__ == '__main__':

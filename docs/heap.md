@@ -17,9 +17,29 @@
 
 ```python
 #!/usr/bin/env python3
-# description: demo Heap library
+# description: demo heap
+# author: greyshell
 
-from macaw import Heap, HeapType
+from libozone import Heap, HeapType
+
+
+class Student:
+    """helper class"""
+    def __init__(self, name, score):
+        self.name = name
+        self.key = score
+
+    def __lt__(self, other):
+        return self.key < other.key
+
+    def __gt__(self, other):
+        return self.key > other.key
+
+    def __eq__(self, other):
+        return self.key == other.key
+
+    def __ne__(self, other):
+        return self.key != other.key
 
 
 if __name__ == '__main__':
@@ -36,4 +56,17 @@ if __name__ == '__main__':
     print(hmax.peek())  # peek the max item from the heap
     hmax.insert(1)  # insert an item into the heap
     print(hmax.remove())  # remove an item from the heap
+
+    alice = Student(name="alice", score=80)
+    bob = Student("bob", 90)
+    malory = Student("malory", 75)
+    tom = Student("tom", 85)
+    
+    arr = [alice, bob, malory, tom]
+    heap = Heap(arr, HeapType.MAX)
+    print(hmax.peek().key)  # peek the max item from the heap -> 90
+    ram = Student("ram", 95)
+    hmax.insert(ram)  # insert an item into the heap
+    print(hmax.remove())  # remove an item from the heap -> 95
+
 ```
