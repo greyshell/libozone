@@ -43,7 +43,7 @@ def is_heap_property_satisfied(array, heap_type=HeapType.MIN):
 
 class TestProgram(unittest.TestCase):
 
-    def test_min_heap_operations_01(self):
+    def test_heap_operations_01(self):
         """
         test a min heap operation
         """
@@ -67,7 +67,7 @@ class TestProgram(unittest.TestCase):
         # test peek()
         self.assertEqual(2, heap.peek())
 
-    def test_max_heap_operations_01(self):
+    def test_heap_operations_02(self):
         """
         test a min heap operation
         """
@@ -91,7 +91,7 @@ class TestProgram(unittest.TestCase):
         # test peek()
         self.assertEqual(76, heap.peek())
 
-    def test_min_heap_operations_02(self):
+    def test_heap_operations_03(self):
         """
         test a min heap operation
         """
@@ -115,7 +115,7 @@ class TestProgram(unittest.TestCase):
         # Assert that the exception message matches
         self.assertEqual(str(context.exception), "empty heap")
 
-    def test_max_heap_operations_03(self):
+    def test_heap_operations_04(self):
         """
         test a min heap operation
         """
