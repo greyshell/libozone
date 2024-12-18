@@ -6,7 +6,7 @@
 import unittest
 import operator
 
-from libozone.heap import Heap, HeapType
+from libozone.priorityqueue.heap import Heap, HeapType
 
 
 class Student:
