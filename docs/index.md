@@ -2,6 +2,10 @@
 
 [libozone](https://github.com/greyshell/libozone) is a collection of common `data structures` written in `Python`
 
+## Pypi Reference
+
+<https://pypi.org/project/libozone/>
+
 ## How to install
 
 ```bash
