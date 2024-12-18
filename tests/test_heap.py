@@ -44,9 +44,6 @@ def is_heap_property_satisfied(array, heap_type=HeapType.MIN):
 class TestProgram(unittest.TestCase):
 
     def test_heap_operations_01(self):
-        """
-        test a min heap operation
-        """
         array = [48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41]
         heap = Heap(array, HeapType.MIN)
 
@@ -68,9 +65,6 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(2, heap.peek())
 
     def test_heap_operations_02(self):
-        """
-        test a min heap operation
-        """
         array = [48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41]
         heap = Heap(array, HeapType.MAX)
 
@@ -92,9 +86,6 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(76, heap.peek())
 
     def test_heap_operations_03(self):
-        """
-        test a min heap operation
-        """
         array = []
         heap = Heap(array, HeapType.MIN)
 
@@ -116,9 +107,6 @@ class TestProgram(unittest.TestCase):
         self.assertEqual(str(context.exception), "empty heap")
 
     def test_heap_operations_04(self):
-        """
-        test a min heap operation
-        """
         alice = Student("alice", 80)
         bob = Student("bob", 90)
         malory = Student("malory", 95)
