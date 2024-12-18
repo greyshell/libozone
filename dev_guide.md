@@ -4,6 +4,13 @@
   - pypi
   - readthedocs
 - login to pypi and generate a token
+- create a virtual environment using pyenv
+- install poetry and bumpversion in that env
+  ```bash
+  pyenv virtualenv 3.12.5 libozone_3.12.5
+  curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+  add a package (dev dependency) use:  poetry add bumpversion --group dev
+  ```
 
 ## Build Site Doc
 
@@ -30,9 +37,3 @@
 
 - delete the content of the dist/ folder to save the space.
 - to add a package (dev dependency) use `poetry add <package_name> --group dev`
-- install poetry and bumpversion
-    ```bash
-    pyenv virtualenv 3.9.7 snowowl
-    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-    pip install bumpversion
-    ```
