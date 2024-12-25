@@ -16,9 +16,8 @@ class HeapType(Enum):
 class Heap:
     def __init__(self, array: list, heap_type: HeapType = HeapType.MIN) -> None:
         """
-        time: O(n*logn)
-            - Θ(n) -> tighter upper bound
-        space: O(1)
+        build heap time: O(n)
+            space: O(1)
         """
         self._heap = array
         self._heap_type = heap_type

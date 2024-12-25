@@ -2,13 +2,13 @@
 
 ## API Details
 
-| Usage                                       | Function                | Time      | Space |
-|---------------------------------------------|-------------------------|-----------|-------|
-| Build a max heap from an array              | Heap(arr, HeapType.MAX) | O(N*logN) | O(1)  |
-| Build a min heap from an array              | Heap(arr, HeapType.MIN) | O(N*logN) | O(1)  |
-| Peek an element from the heap               | peek()                  | O(1)      | O(1)  |
-| Insert an element into heap(`heapify_up`)   | insert(element)         | O(logN)   | O(1)  |
-| Remove an element into heap(`heapify_down`) | remove()                | O(logN)   | O(1)  |
+| Usage                                       | Function                | Time    | Space |
+|---------------------------------------------|-------------------------|---------|-------|
+| Build a max heap from an array              | Heap(arr, HeapType.MAX) | O(N)    | O(1)  |
+| Build a min heap from an array              | Heap(arr, HeapType.MIN) | O(N)    | O(1)  |
+| Peek an element from the heap               | peek()                  | O(1)    | O(1)  |
+| Insert an element into heap(`heapify_up`)   | insert(element)         | O(logN) | O(1)  |
+| Remove an element into heap(`heapify_down`) | remove()                | O(logN) | O(1)  |
 
 
 
