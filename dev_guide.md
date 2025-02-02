@@ -12,6 +12,12 @@
   add a package (dev dependency) use:  poetry add bumpversion --group dev
   ```
 
+## How to update a feature
+
+- first checkout to local `dev` branch.
+- implement the feature
+- check if all test cases are passed
+
 ## Build Site Doc
 
 - add the git project to https://app.readthedocs.org/dashboard/
