@@ -44,6 +44,10 @@ class Student:
 
 
 if __name__ == '__main__':
+    """
+    note: always check if the heap is empty before calling the peek or remove methods. 
+        calling them directly on an empty heap will throw an exception.
+    """
     # example of min heap
     arr = [5, 9, 2]
     hmin = Heap(arr)  # create a min heap
